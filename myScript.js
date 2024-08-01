@@ -14,9 +14,9 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     let choice = prompt("Choose: rock, paper, or scissors?");
+    if(isNaN(choice || choice == "" || choice == " " || choice == null)) {
+        getHumanChoice();
+    }
     return choice;
 }
 
-function playRound(humanChoice, computerChoice) {
-
-}
