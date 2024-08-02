@@ -31,6 +31,7 @@ function getHumanChoice() {
 
 function playGame() {
     function playRound(humanChoice, computerChoice) {
+        console.log("You chose " + humanSelection + ". Computer chose " + computerChoice + ".");
         if (humanChoice == "rock" && computerChoice == "rock" || humanChoice == "paper" && computerChoice == "paper" || humanChoice == "scissors" && computerChoice == "scissors") {
             console.log("You chose the same thing!");
         } else if (humanChoice == "rock") {
@@ -65,7 +66,7 @@ function playGame() {
     playRound(humanSelection, computerSelection);
 
     console.log("Your score: " + humanScore);
-    console.log("Computer score: " + computerScore);
+    console.log("Computer score: " + computerScore + "\n");
 }
 
     
